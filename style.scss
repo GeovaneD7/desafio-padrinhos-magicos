@@ -1,0 +1,88 @@
+$cinza_escuro: #181818;
+$preto: #111111;
+$vermelho: #DF0712;
+$branco: #FFFCFC;
+
+@mixin fonte_inter () {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+@mixin flexbox () {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  @include fonte_inter();
+}
+
+header {
+  @include flexbox();
+  background-color: $preto;
+
+  img {
+    width: 10vw;
+    padding: 10px;
+  }
+  #acesso {
+    padding: 5px 20px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: $vermelho;
+    color: #FFFCFC;
+
+    font-weight: 700;
+  }
+  #logar {
+
+  }
+}
+
+main {
+  background-color: $cinza_escuro;
+  #titulos {
+    h2 {
+
+    }
+    h1 {
+
+    }
+    
+    img {
+      transform: scaleX(-1);
+      max-width: 100px;
+    }
+  }
+  #episodios {
+    div {
+      img {
+
+      }
+      h3 {
+
+      }
+      p {
+
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $preto;
+  p {
+    
+  }
+}
+
+

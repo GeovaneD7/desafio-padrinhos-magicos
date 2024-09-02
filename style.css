@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+}
+header img {
+  width: 10vw;
+  padding: 10px;
+}
+header #acesso {
+  padding: 5px 20px;
+  border-style: none;
+  border-radius: 4px;
+  background-color: #DF0712;
+  color: #FFFCFC;
+  font-weight: 700;
+}
+main {
+  background-color: #181818;
+}
+main #titulos img {
+  transform: scaleX(-1);
+  max-width: 100px;
+}
+footer {
+  background-color: #111111;
+}/*# sourceMappingURL=style.css.map */
