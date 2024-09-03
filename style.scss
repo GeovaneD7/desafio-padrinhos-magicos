@@ -6,8 +6,9 @@ $branco: #FFFCFC;
 @mixin fonte_inter () {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 64px;
+  color: #FFFCFC;
 }
 
 @mixin flexbox () {
@@ -24,65 +25,108 @@ $branco: #FFFCFC;
 
 body {
   @include fonte_inter();
+  background-color: $cinza_escuro;
 }
 
 header {
   @include flexbox();
+  align-items: space-between;
   background-color: $preto;
+  height: 12vh;
+  div {
+    @include flexbox();
+    width: auto;
+
+  }
 
   img {
-    width: 10vw;
-    padding: 10px;
+    width: 12vw;
+    margin: 30px;
   }
+
   #acesso {
     padding: 5px 20px;
     border-style: none;
     border-radius: 4px;
     background-color: $vermelho;
     color: #FFFCFC;
-
+    font-size: 2rem;
     font-weight: 700;
+    margin: 30px;
   }
+  
   #logar {
-
+    padding: 5px 20px;
+    border: 1px solid #FFFCFC;
+    border-radius: 10px;
+    background-color: $cinza_escuro;
+    color: #FFFCFC;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 30px;
+    margin-right: 40px;
   }
 }
 
 main {
+  
   background-color: $cinza_escuro;
-  #titulos {
-    h2 {
+  margin: 0 10%;
+  height: 80vh;
 
+  #titulo {
+    @include flexbox();
+    padding-top: 5%;
+    div {
+      font-size: 2rem;
+      h1 {
+        font-weight: 300;
+      }
     }
-    h1 {
 
-    }
-    
     img {
       transform: scaleX(-1);
-      max-width: 100px;
+      width: 150px;
+      max-width: 150px;
     }
   }
-  #episodios {
-    div {
-      img {
 
+  #episodios {
+    @include flexbox();
+    margin: 5vh 0;
+    div {
+      @include flexbox();
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: 350px;
+      
+      img {
+        height: 300px;
+        width: 350px;
+        object-fit: cover;
+        padding-bottom: 30px;
       }
       h3 {
-
+        font-size: 1.5rem;
+        padding-bottom: 10px;
       }
       p {
-
+        font-size: 1rem;
       }
     }
   }
 }
 
 footer {
+  @include flexbox();
+  justify-content: flex-start;
+
   background-color: $preto;
+  height: 8vh;
   p {
-    
+    font-size: 1.7rem;
+    margin-left: 3%;
   }
 }
-
 

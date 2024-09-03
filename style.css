@@ -7,19 +7,29 @@
 body {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 64px;
+  color: #FFFCFC;
+  background-color: #181818;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: space-between;
   background-color: #111111;
+  height: 12vh;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
 }
 header img {
-  width: 10vw;
-  padding: 10px;
+  width: 12vw;
+  margin: 30px;
 }
 header #acesso {
   padding: 5px 20px;
@@ -27,15 +37,83 @@ header #acesso {
   border-radius: 4px;
   background-color: #DF0712;
   color: #FFFCFC;
+  font-size: 2rem;
   font-weight: 700;
+  margin: 30px;
 }
+header #logar {
+  padding: 5px 20px;
+  border: 1px solid #FFFCFC;
+  border-radius: 10px;
+  background-color: #181818;
+  color: #FFFCFC;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 30px;
+  margin-right: 40px;
+}
+
 main {
   background-color: #181818;
+  margin: 0 10%;
+  height: 80vh;
 }
-main #titulos img {
+main #titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+}
+main #titulo div {
+  font-size: 2rem;
+}
+main #titulo div h1 {
+  font-weight: 300;
+}
+main #titulo img {
   transform: scaleX(-1);
-  max-width: 100px;
+  width: 150px;
+  max-width: 150px;
 }
+main #episodios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5vh 0;
+}
+main #episodios div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 350px;
+}
+main #episodios div img {
+  height: 300px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 30px;
+}
+main #episodios div h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+main #episodios div p {
+  font-size: 1rem;
+}
+
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #111111;
+  height: 8vh;
+}
+footer p {
+  font-size: 1.7rem;
+  margin-left: 3%;
 }/*# sourceMappingURL=style.css.map */
